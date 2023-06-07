@@ -5,8 +5,10 @@ const Fact = ({ children }) => {
     return (
         <div className='fact'>
         <h2>{title}</h2>
-        <img src={image} alt="Fact" />
+        <div className='fact-content'>
+            <img src={image} alt="Fact" />
         <p>{content}</p>
+        </div>
         </div>
     );
 };
